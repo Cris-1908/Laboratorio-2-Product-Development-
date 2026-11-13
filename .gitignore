@@ -1,0 +1,15 @@
+# los archivos publicados y las credenciales no se suben al repositorio
+data/*
+!data/.gitkeep
+.env
+
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+*.egg-info/
+build/
+*.db
+mlruns/
+mlartifacts/
+.DS_Store
