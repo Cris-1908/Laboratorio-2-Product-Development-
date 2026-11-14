@@ -1,0 +1,18 @@
+{
+    "registros_guardados": 11,
+    "calidad": {
+        "estado": "advertencia",
+        "observaciones": [
+            {
+                "campo": "ventas[5].ventas",
+                "accion": "advertir",
+                "detalle": "venta negativa (-4), probablemente una devoluci\u00f3n; no se registr\u00f3 esa familia"
+            },
+            {
+                "campo": "ventas",
+                "accion": "advertir",
+                "detalle": "no vienen ventas de 1 familia (frutas_verduras); no se registraron"
+            }
+        ]
+    }
+}

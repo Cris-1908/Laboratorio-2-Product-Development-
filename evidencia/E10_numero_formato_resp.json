@@ -1,0 +1,18 @@
+{
+    "registros_guardados": 0,
+    "calidad": {
+        "estado": "corregido",
+        "observaciones": [
+            {
+                "campo": "ventas[1].ventas",
+                "accion": "reparar",
+                "detalle": "'50,0' se interpret\u00f3 como 50"
+            },
+            {
+                "campo": "ventas[2].ventas",
+                "accion": "reparar",
+                "detalle": "'1,292' se interpret\u00f3 como 1292"
+            }
+        ]
+    }
+}

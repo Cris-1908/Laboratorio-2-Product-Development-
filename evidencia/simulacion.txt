@@ -1,0 +1,39 @@
+modelo vigente al iniciar: {'nombre': 'novamercado-ventas', 'alias': 'produccion', 'version': '1'}
+  [2026-03-07] reentrenamiento: {'estado': 'exitoso', 'promovido': False, 'version': '1', 'motivo': 'No se promueve: costo en validación 22 191 vs 21 702 del vigente (mejora de -2.3%, se exige al menos 1.0%)'}
+  [2026-03-14] reentrenamiento: {'estado': 'exitoso', 'promovido': False, 'version': '1', 'motivo': 'No se promueve: costo en validación 21 418 vs 21 581 del vigente (mejora de 0.8%, se exige al menos 1.0%)'}
+
+Calidad de las respuestas: {'corregido': 13, 'advertencia': 21, 'ok': 147, 'rechazada': 8}
+
+Costo por día (suma de las 9 tiendas) y versión del modelo:
+             costo version   wape
+fecha                            
+2026-03-01  3327.2       1  0.170
+2026-03-02  2769.7       1  0.221
+2026-03-03  2399.6       1  0.165
+2026-03-04  2365.2       1  0.162
+2026-03-05  2130.0       1  0.149
+2026-03-06  2719.2       1  0.157
+2026-03-07  3402.2       1  0.154
+2026-03-08  2952.9       1  0.178
+2026-03-09  2276.8       1  0.180
+2026-03-10  2673.0       1  0.188
+2026-03-11  3791.3       1  0.238
+2026-03-12  2453.4       1  0.179
+2026-03-13  4156.8       1  0.225
+2026-03-14  6951.6       1  0.240
+2026-03-15  3960.3       1  0.190
+2026-03-16  3405.4       1  0.211
+2026-03-17  2053.2       1  0.162
+2026-03-18  3453.2       1  0.219
+2026-03-19  3092.4       1  0.189
+2026-03-20  4382.6       1  0.218
+2026-03-21  4238.3       1  0.199
+
+Costo total: 68,954   costo medio por fila: 31.75
+
+Por versión del modelo:
+         filas  costo_medio
+version                    
+1         2172        31.75
+
+modelo vigente al terminar: {'nombre': 'novamercado-ventas', 'alias': 'produccion', 'version': '1'}

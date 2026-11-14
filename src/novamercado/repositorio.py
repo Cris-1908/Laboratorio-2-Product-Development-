@@ -75,7 +75,10 @@ def registrar_observacion(engine: Engine, payload, estado: str, correcciones: li
             # si el valor es el mismo no se toca la fila y por eso no cuenta como guardada
             where=db.observaciones.c.ventas.is_distinct_from(ins.excluded.ventas),
         )
-        return con.execute(stmt).rowcount
+        # RETURNING y no rowcount: con PostgreSQL + psycopg el rowcount puede venir en -1.
+        # Solo devuelve las filas que de verdad se insertaron o cambiaron.
+        devueltas = con.execute(stmt.returning(db.observaciones.c.familia_id)).fetchall()
+        return len(devueltas)
 
 
 def valores_previos_observacion(engine: Engine, tienda_id: int, fecha: date) -> dict[str, int]:

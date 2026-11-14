@@ -1,0 +1,16 @@
+== 1. Se apaga MLflow: 13:40:54 UTC
+ Container novamercado-mlflow-1 Stopping 
+ Container novamercado-mlflow-1 Stopped 
+== 2. /health con MLflow caído (45 s después): 13:41:46 UTC
+{"estado":"degradado","motivo":"mlflow: no responde (ConnectError)"}
+HTTP 200
+== 3. La API sigue prediciendo
+{"tienda_id":5,"fecha":"2025-11-17","version_modelo":"1","predicciones":[{"familia_id":"abarrotes","venta_esperada":1006.0,"cantidad_sugerida":1173},{"familia_id":"bebe","venta_esperada":62.2,"cantidad_sugerida":79},{"familia_id":"bebidas","venta_esperada":1078.4,"cantidad_sugerida":1275},{"familia_
+== 4. Se enciende MLflow: 13:41:50 UTC
+ Container novamercado-db-1 Waiting 
+ Container novamercado-db-1 Healthy 
+ Container novamercado-mlflow-1 Starting 
+ Container novamercado-mlflow-1 Started 
+== 5. /health tras recuperarse (60 s después): 13:42:52 UTC
+{"estado":"ok"}
+HTTP 200
