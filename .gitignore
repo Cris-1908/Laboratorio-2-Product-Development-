@@ -13,3 +13,4 @@ build/
 mlruns/
 mlartifacts/
 .DS_Store
+*:Zone.Identifier
